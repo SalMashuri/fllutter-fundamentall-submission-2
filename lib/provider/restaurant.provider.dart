@@ -56,7 +56,7 @@ class RestaurantProvider extends ChangeNotifier {
     } catch (e) {
       _state = ResultState.Error;
       notifyListeners();
-      return _message = 'Error --> $e';
+      return _message = "Connection Lost, Periksa kembali koneksi internet anda";
     }
   }
 
@@ -78,7 +78,7 @@ class RestaurantProvider extends ChangeNotifier {
     } catch (e) {
       _state = ResultState.Error;
       notifyListeners();
-      return _message = "Error --> $e";
+      return _message = "Connection Lost, Periksa kembali koneksi internet anda";
     }
   }
 
@@ -100,7 +100,7 @@ class RestaurantProvider extends ChangeNotifier {
     } catch (e) {
       _state = ResultState.Error;
       notifyListeners();
-      return _message = 'Error --> $e';
+      return _message = "Connection Lost, Periksa kembali koneksi internet anda";
     }
   }
 }
